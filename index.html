@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1E202B]">
+    <nav class="bg-[#1E202B]">
+      <div
+        class="max-w-screen-xl w-[60%] flex flex-wrap items-center justify-between mx-auto pt-8 pb-10"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo.png" class="h-8" alt="Weather Logo" />
+          <div>
+            <span
+              class="self-center text-sm font-bold whitespace-nowrap dark:text-white d-block"
+            >
+              Weather
+            </span>
+            <h6
+              class="self-center text-xs font-thin whitespace-nowrap dark:text-white d-block"
+            >
+              tagline goes here
+            </h6>
+          </div>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#1E202B] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      style="background-image: url('./assets/banner.png')"
+      class="w-screen h-[350px] mx-auto text-center"
+    >
+      <div class="mx-auto">
+        <div class="flex justify-center items-center pt-14">
+          <input
+            class="focus:outline-none w-[50%] mt-5 mb-5 p-3 rounded-l-3xl bg-[#1E202B] text-white outline-none placeholder:text-xs placeholder:text-gray-500"
+            type="text"
+            placeholder="Find your location..."
+          />
+          <span class="bg-[#1E202B] rounded-r-3xl p-[4px] pe-[5px]">
+            <button
+              class="bg-[#009AD8] rounded-3xl text-white pt-3 pb-3 pe-8 ps-8 text-xs"
+            >
+              Find
+            </button>
+          </span>
+        </div>
+
+        <div
+          class="mt-14 h-72 w-[55.5%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-0 content-normal text-gray-400 text-sm"
+        >
+          <div class="bg-[#323544] rounded-l-lg">
+            <div class="bg-[#2D303D] pt-2 pb-2 rounded-l-lg">
+              <div class="flex justify-between mx-auto w-[95%]">
+                <h6>Friday</h6>
+                <h6>12 January</h6>
+              </div>
+            </div>
+            <div class="ms-3 mt-7">
+              <h3 class="CN text-left text-lg">name</h3>
+              <div class="flex text-white font-bold">
+                <h2 class="fd-degree text-7xl">??</h2>
+                <span class="text-5xl">o</span>
+                <h2 class="text-7xl">C</h2>
+                <div class="c-img"></div>
+              </div>
+              <div class="c-text text-start mt-8 text-blue-400">Sunny</div>
+              <div class="text-start mt-8 flex mb-6">
+                <span class="flex me-5"
+                  ><img
+                    class="me-1"
+                    src="./assets/icon-umberella.png"
+                    alt=""
+                  />20%</span
+                >
+                <span class="flex me-5"
+                  ><img
+                    class="me-1"
+                    src="./assets/icon-wind.png"
+                    alt=""
+                  />18km/h</span
+                >
+                <span class="flex"
+                  ><img
+                    class="me-1"
+                    src="./assets/icon-compass.png"
+                    alt=""
+                  />East</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#262936]">
+            <div class="bg-[#222530] flex justify-center pt-2 pb-2">
+              <h6>Friday</h6>
+            </div>
+            <div class="c-img2 w-10 mx-auto mt-12">
+              <img
+                class="w-[100%]"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt="weather"
+              />
+            </div>
+            <div class="flex text-white justify-center mt-3">
+              <h2 class="fd-degree2max text-2xl">18</h2>
+              <span class="text-1xl font-bold">o</span>
+              <h2 class="text-2xl">C</h2>
+            </div>
+            <div class="flex text-gray-300 justify-center">
+              <h2 class="fd-degree2min text-lg font-thin">18</h2>
+              <span class="text-1xl font-thin">o</span>
+            </div>
+            <div class="c-text2 text-center mt-3 text-xs text-blue-400">
+              Sunny
+            </div>
+          </div>
+
+          <div class="bg-[#323544] rounded-r-lg">
+            <div
+              class="bg-[#2D303D] flex justify-center pt-2 pb-2 rounded-r-lg"
+            >
+              <h6>Friday</h6>
+            </div>
+            <div class="c-img3 w-10 mx-auto mt-12">
+              <img
+                class="w-[100%]"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt="weather"
+              />
+            </div>
+            <div class="flex text-white justify-center mt-3">
+              <h2 class="fd-degree3max text-2xl">18</h2>
+              <span class="text-1xl font-bold">o</span>
+              <h2 class="text-2xl">C</h2>
+            </div>
+            <div class="flex text-gray-300 justify-center">
+              <h2 class="fd-degree3min text-lg font-thin">18</h2>
+              <span class="text-1xl font-thin">o</span>
+            </div>
+            <div class="c-text3 text-center mt-3 text-xs text-blue-400">
+              Sunny
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-48 bg-[#262936] pb-11 flex">
+      <div class="w-[65%]">
+        <div class="flex justify-center items-center ms-52 pt-5">
+          <input
+            class="focus:outline-none w-[55%] mt-5 mb-5 p-3 rounded-l-3xl bg-[#1E202B] text-white outline-none placeholder:text-xs placeholder:text-gray-500"
+            type="text"
+            placeholder="Find your location..."
+          />
+          <span class="bg-[#1E202B] rounded-r-3xl p-[4px] pe-[5px]">
+            <button
+              class="bg-[#009AD8] rounded-3xl text-white pt-3 pb-3 pe-8 ps-8 text-xs"
+            >
+              Find
+            </button>
+          </span>
+        </div>
+        <h6 class="text-gray-400 text-sm text-center ms-20">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </h6>
+      </div>
+      <div
+        class="w-[11%] flex justify-center items-center content-center gap-2"
+      >
+        <a
+          href="#"
+          class="w-[40px] h-[40px] bo rounded-full flex justify-center items-center border-[#1E202B] text-[#009AD8] bg-[#1E202B] hover:border-[#009AD8] hover:text-white hover:bg-[#009AD8] transition duration-300"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[40px] h-[40px] bo rounded-full flex justify-center items-center border-[#1E202B] text-[#009AD8] bg-[#1E202B] hover:border-[#009AD8] hover:text-white hover:bg-[#009AD8] transition duration-300"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[40px] h-[40px] bo rounded-full flex justify-center items-center border-[#1E202B] text-[#009AD8] bg-[#1E202B] hover:border-[#009AD8] hover:text-white hover:bg-[#009AD8] transition duration-300"
+        >
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[40px] h-[40px] bo rounded-full flex justify-center items-center border-[#1E202B] text-[#009AD8] bg-[#1E202B] hover:border-[#009AD8] hover:text-white hover:bg-[#009AD8] transition duration-300"
+        >
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
