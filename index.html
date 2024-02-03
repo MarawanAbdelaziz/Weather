@@ -75,7 +75,6 @@
                 >About</a
               >
             </li>
-
             <li>
               <a
                 href="#"
@@ -111,10 +110,12 @@
           <input
             class="focus:outline-none w-[50%] mt-5 mb-5 p-3 rounded-l-3xl bg-[#1E202B] text-white outline-none placeholder:text-xs placeholder:text-gray-500"
             type="text"
+            oninput="getWeather(this.value)"
             placeholder="Find your location..."
           />
           <span class="bg-[#1E202B] rounded-r-3xl p-[4px] pe-[5px]">
             <button
+              onclick="getWeather()"
               class="bg-[#009AD8] rounded-3xl text-white pt-3 pb-3 pe-8 ps-8 text-xs"
             >
               Find
@@ -169,7 +170,7 @@
 
           <div class="bg-[#262936]">
             <div class="bg-[#222530] flex justify-center pt-2 pb-2">
-              <h6>Friday</h6>
+              <h6>Saturday</h6>
             </div>
             <div class="c-img2 w-10 mx-auto mt-12">
               <img
@@ -196,7 +197,7 @@
             <div
               class="bg-[#2D303D] flex justify-center pt-2 pb-2 rounded-r-lg"
             >
-              <h6>Friday</h6>
+              <h6>Sunday</h6>
             </div>
             <div class="c-img3 w-10 mx-auto mt-12">
               <img
@@ -226,13 +227,13 @@
       <div class="w-[65%]">
         <div class="flex justify-center items-center ms-52 pt-5">
           <input
-            class="focus:outline-none w-[55%] mt-5 mb-5 p-3 rounded-l-3xl bg-[#1E202B] text-white outline-none placeholder:text-xs placeholder:text-gray-500"
+            class="find-c focus:outline-none w-[55%] mt-5 mb-5 p-3 rounded-l-3xl bg-[#1E202B] text-white outline-none placeholder:text-xs placeholder:text-gray-500"
             type="text"
             placeholder="Find your location..."
           />
           <span class="bg-[#1E202B] rounded-r-3xl p-[4px] pe-[5px]">
             <button
-              class="bg-[#009AD8] rounded-3xl text-white pt-3 pb-3 pe-8 ps-8 text-xs"
+              class="bg-[#009AD8] rounded-3xl text-white pt-3 pb-3 pe-8 ps-8 text-xs z-[999]"
             >
               Find
             </button>

@@ -1,16 +1,31 @@
-// https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${a}&days=3
+var country = 'cairo' ;
 
 
-async function getWeather(){
+async function getWeather(find){
 
-    let response = await fetch('https://api.weatherapi.com/v1/forecast.json?key=acef007b1f2e4177874142345241801&q&q=cairo&days=3&aqi=yes&alerts=no');
-    let result = await response.json();
-    console.log(result);
+
+  
+  let find1 = find?.length >= 3 ? find : country;
+  
+  
+  let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=acef007b1f2e4177874142345241801&q=${find1}&days=3&aqi=yes&alerts=no`);
+  let result = await response.json();
+  console.log(response);
+  console.log(result);
+  
+  if(response.status == '200'){
     displayWeather(result);
-    
-}
+  }
+  
 
-getWeather()
+  console.log('f = ' + find);
+  console.log('f1 = '+find1);
+  
+
+}
+getWeather();
+
+
 
 function displayWeather(weather) {
 
@@ -54,3 +69,4 @@ function displayWeather(weather) {
   
 
 }
+
